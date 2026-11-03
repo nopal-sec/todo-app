@@ -1,0 +1,17 @@
+FROM node:20-alpine AS build
+WORKDIR /app
+ARG NEXT_PUBLIC_BACKEND_DOMAIN
+ARG NEXT_PUBLIC_DOMAIN
+ENV NEXT_PUBLIC_BACKEND_DOMAIN=$NEXT_PUBLIC_BACKEND_DOMAIN
+ENV NEXT_PUBLIC_DOMAIN=$NEXT_PUBLIC_DOMAIN
+COPY package*.json ./
+RUN npm ci
+COPY . .
+RUN npm run build
+
+FROM node:20-alpine
+WORKDIR /app
+ENV NODE_ENV=production
+COPY --from=build /app ./
+EXPOSE 3000
+CMD ["npm", "start"]
