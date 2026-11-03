@@ -8,7 +8,7 @@ export default function Home() {
       <div className="flex flex-col items-center gap-4 text-center">
         <div className="space-y-2">
           <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl">
-            Organize your tasks with ease
+            Organize your tasks with ease, TEST GANTI SESUATU DI KODE NYA
           </h1>
           <p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl">
             TaskMaster helps you manage your tasks efficiently, so you can focus on what matters
