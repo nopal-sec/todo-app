@@ -101,7 +101,7 @@ export default function TodoTable({ todos, onDelete, onEdit, currentPage }: Todo
                           <AlertDialogHeader>
                             <AlertDialogTitle>Are you sure?</AlertDialogTitle>
                             <AlertDialogDescription>
-                              This action cannot be undone. This will permanently delete the todo "{todo.name}".
+                              This action cannot be undone. This will permanently delete the todo &quot;{todo.name}&quot;.
                             </AlertDialogDescription>
                           </AlertDialogHeader>
                           <AlertDialogFooter>
