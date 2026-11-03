@@ -10,7 +10,7 @@ async function bootstrap() {
   );
   app.use(cookieParser());
   app.enableCors({
-    origin: process.env.FRONTEND_ORIGIN,
+    origin: [process.env.FRONTEND_ORIGIN, 'http://192.168.3.57:3000'],
     credentials: true,
   });
 
