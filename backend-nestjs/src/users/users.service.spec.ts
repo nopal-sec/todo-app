@@ -61,7 +61,7 @@ describe('UsersService', () => {
         password: hashed,
         user_id: 'mocked-id',
         todos: [],
-      } as User);
+      });
       userRepository.save.mockResolvedValue(mockUser);
 
       const result = await service.create(mockUserDto);

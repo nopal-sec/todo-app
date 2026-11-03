@@ -9,11 +9,11 @@ describe('AuthController', () => {
   let service: UsersService;
   let res: Response;
 
-  const mockUser = {
-    user_id: 'user123',
-    username: 'testuser',
-    password: 'hashedpassword',
-  };
+  // const mockUser = {
+  //   user_id: 'user123',
+  //   username: 'testuser',
+  //   password: 'hashedpassword',
+  // };
 
   const mockToken = 'mock-jwt-token';
 

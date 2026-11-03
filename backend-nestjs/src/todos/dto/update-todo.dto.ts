@@ -7,7 +7,6 @@ import {
   IsString,
   Length,
 } from 'class-validator';
-import { Type } from 'class-transformer';
 
 export class UpdateTodoDto extends PartialType(CreateTodoDto) {
   @IsOptional()
