@@ -18,6 +18,9 @@ export async function CreateTodoRequest(
       body: JSON.stringify(data),
     });
 
+    console.log('[DATA] :', data)
+    console.log('[RESPONSE] :', response)
+
     if (response.status === 401 || response.status === 403) {
       return {
         success: false,

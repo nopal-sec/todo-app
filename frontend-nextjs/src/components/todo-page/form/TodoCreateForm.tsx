@@ -60,7 +60,7 @@ export function TodoCreateForm({ onCreated }: { onCreated?: () => void }) {
       const result = await CreateTodoRequest(data);
 
       if(!result.success && result.message==="Unauthorized") {
-          toast.warning("You need to Sin-in first")
+          toast.warning("You need to Sign-in first")
           router.push('/signin');
           return;
       }

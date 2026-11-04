@@ -14,6 +14,8 @@ export const fetchWithAuth = async (
     'Content-Type': 'application/json',
   };
 
+  console.log('[TOKEN] :', token)
+
   if (token) {
     // @ts-expect-error skip
     headers['Cookie'] = `jwt=${token}`;
