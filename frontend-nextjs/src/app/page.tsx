@@ -12,7 +12,7 @@ export default function Home() {
           </h1>
           <p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl">
             TaskMaster helps you manage your tasks efficiently, so you can focus on what matters
-            most.
+            most. SESUATU DISINI PERUBAHAN
           </p>
         </div>
         <div className="flex flex-col sm:flex-row gap-4 mt-6">
